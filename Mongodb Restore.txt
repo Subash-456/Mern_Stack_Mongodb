@@ -1,0 +1,10 @@
+How to make a backup of existing database into a new database?
+
+--> mongodump --db <database_name> --out <backup_directory_path>
+
+--> mongodump --db mydatabase --out ./backup
+
+-- mongorestore --db <new_database_name> <path_to_backup_directory>
+
+--> mongorestore --db newdatabase ./backup
+ 
